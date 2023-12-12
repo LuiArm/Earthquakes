@@ -14,6 +14,7 @@
 		F65907EF2B22EF080028243B /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65907EE2B22EF080028243B /* Quake.swift */; };
 		F65907F12B23B9CB0028243B /* QuakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65907F02B23B9CB0028243B /* QuakeError.swift */; };
 		F678DF072B27F97A0013B7F4 /* EarthquakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678DF062B27F97A0013B7F4 /* EarthquakesTests.swift */; };
+		F678DF0E2B27FCD20013B7F4 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678DF0D2B27FCD20013B7F4 /* TestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F65907F02B23B9CB0028243B /* QuakeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeError.swift; sourceTree = "<group>"; };
 		F678DF042B27F97A0013B7F4 /* EarthquakesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F678DF062B27F97A0013B7F4 /* EarthquakesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesTests.swift; sourceTree = "<group>"; };
+		F678DF0D2B27FCD20013B7F4 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F678DF062B27F97A0013B7F4 /* EarthquakesTests.swift */,
+				F678DF0D2B27FCD20013B7F4 /* TestData.swift */,
 			);
 			path = EarthquakesTests;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F678DF072B27F97A0013B7F4 /* EarthquakesTests.swift in Sources */,
+				F678DF0E2B27FCD20013B7F4 /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
