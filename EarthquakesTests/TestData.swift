@@ -8,7 +8,7 @@
 import Foundation
 
 let testFeature_nc73649170 = """
- {
+    {
       "mag": 0.34,
       "place": "5km NW of The Geysers, CA",
       "time": 1636129710550,
