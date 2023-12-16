@@ -10,7 +10,7 @@
 
 import Foundation
 
-struct QuakeLocation {
+struct QuakeLocation: Decodable {
     var latitude: Double {properties.products.origin.first!.properties.latitude}
     var longitude: Double { properties.products.origin.first!.properties.longitude}
     // var to store roo of geojson hierarchy
