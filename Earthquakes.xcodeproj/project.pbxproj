@@ -17,6 +17,7 @@
 		F66A0A1D2B2D076D00A5E4D1 /* QuakeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66A0A1C2B2D076D00A5E4D1 /* QuakeLocation.swift */; };
 		F678DF072B27F97A0013B7F4 /* EarthquakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678DF062B27F97A0013B7F4 /* EarthquakesTests.swift */; };
 		F678DF0E2B27FCD20013B7F4 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678DF0D2B27FCD20013B7F4 /* TestData.swift */; };
+		F68B98D92B301E1000A185A8 /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98D82B301E1000A185A8 /* HTTPDataDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F678DF042B27F97A0013B7F4 /* EarthquakesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F678DF062B27F97A0013B7F4 /* EarthquakesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesTests.swift; sourceTree = "<group>"; };
 		F678DF0D2B27FCD20013B7F4 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		F68B98D82B301E1000A185A8 /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				F65907F02B23B9CB0028243B /* QuakeError.swift */,
 				F66A0A1A2B2A652000A5E4D1 /* GeoJSON.swift */,
 				F66A0A1C2B2D076D00A5E4D1 /* QuakeLocation.swift */,
+				F68B98D82B301E1000A185A8 /* HTTPDataDownloader.swift */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66A0A1B2B2A652000A5E4D1 /* GeoJSON.swift in Sources */,
+				F68B98D92B301E1000A185A8 /* HTTPDataDownloader.swift in Sources */,
 				F65907F12B23B9CB0028243B /* QuakeError.swift in Sources */,
 				F66A0A1D2B2D076D00A5E4D1 /* QuakeLocation.swift in Sources */,
 				F65907E32B22D2030028243B /* ContentView.swift in Sources */,
