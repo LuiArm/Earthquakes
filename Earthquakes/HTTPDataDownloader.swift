@@ -9,6 +9,7 @@ import Foundation
 
 let validStatus = 200...299
 
+//Defining this protocol abstracts the network transport from the rest of the client code. This abstraction lets you use a testable structure in place of a network client
 protocol HTTPDataDownloader {
     func httpData(from: URL) async throws -> Data
 }
