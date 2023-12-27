@@ -20,6 +20,7 @@
 		F68B98DB2B3355D800A185A8 /* QuakeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98DA2B3355D800A185A8 /* QuakeClient.swift */; };
 		F68B98DF2B39099F00A185A8 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678DF0D2B27FCD20013B7F4 /* TestData.swift */; };
 		F68B98E12B3909F800A185A8 /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98E02B3909F800A185A8 /* TestDownloader.swift */; };
+		F68B98E32B3BE1E600A185A8 /* QuakesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98E22B3BE1E600A185A8 /* QuakesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		F68B98D82B301E1000A185A8 /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
 		F68B98DA2B3355D800A185A8 /* QuakeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeClient.swift; sourceTree = "<group>"; };
 		F68B98E02B3909F800A185A8 /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = "<group>"; };
+		F68B98E22B3BE1E600A185A8 /* QuakesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				F66A0A1C2B2D076D00A5E4D1 /* QuakeLocation.swift */,
 				F68B98D82B301E1000A185A8 /* HTTPDataDownloader.swift */,
 				F68B98DA2B3355D800A185A8 /* QuakeClient.swift */,
+				F68B98E22B3BE1E600A185A8 /* QuakesProvider.swift */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68B98E32B3BE1E600A185A8 /* QuakesProvider.swift in Sources */,
 				F68B98DF2B39099F00A185A8 /* TestData.swift in Sources */,
 				F66A0A1B2B2A652000A5E4D1 /* GeoJSON.swift in Sources */,
 				F68B98D92B301E1000A185A8 /* HTTPDataDownloader.swift in Sources */,
