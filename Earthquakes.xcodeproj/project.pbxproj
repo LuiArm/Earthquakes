@@ -22,6 +22,9 @@
 		F68B98E12B3909F800A185A8 /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98E02B3909F800A185A8 /* TestDownloader.swift */; };
 		F68B98E32B3BE1E600A185A8 /* QuakesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98E22B3BE1E600A185A8 /* QuakesProvider.swift */; };
 		F68B98E52B3D311800A185A8 /* Quakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98E42B3D311800A185A8 /* Quakes.swift */; };
+		F68B98E92B4376A800A185A8 /* QuakeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98E82B4376A800A185A8 /* QuakeRow.swift */; };
+		F68B98EB2B43777500A185A8 /* QuakeMagnitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98EA2B43777500A185A8 /* QuakeMagnitude.swift */; };
+		F68B98ED2B43E58A00A185A8 /* Quake+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B98EC2B43E58A00A185A8 /* Quake+Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		F68B98E02B3909F800A185A8 /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = "<group>"; };
 		F68B98E22B3BE1E600A185A8 /* QuakesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesProvider.swift; sourceTree = "<group>"; };
 		F68B98E42B3D311800A185A8 /* Quakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quakes.swift; sourceTree = "<group>"; };
+		F68B98E82B4376A800A185A8 /* QuakeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeRow.swift; sourceTree = "<group>"; };
+		F68B98EA2B43777500A185A8 /* QuakeMagnitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeMagnitude.swift; sourceTree = "<group>"; };
+		F68B98EC2B43E58A00A185A8 /* Quake+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,18 +99,15 @@
 		F65907DF2B22D2030028243B /* Earthquakes */ = {
 			isa = PBXGroup;
 			children = (
+				F68B98E72B4375B700A185A8 /* Views */,
 				F65907E02B22D2030028243B /* EarthquakesApp.swift */,
+				F68B98E62B43755F00A185A8 /* Models */,
 				F65907E22B22D2030028243B /* ContentView.swift */,
 				F65907E42B22D2050028243B /* Assets.xcassets */,
 				F65907E62B22D2050028243B /* Preview Content */,
-				F65907EE2B22EF080028243B /* Quake.swift */,
-				F65907F02B23B9CB0028243B /* QuakeError.swift */,
-				F66A0A1A2B2A652000A5E4D1 /* GeoJSON.swift */,
-				F66A0A1C2B2D076D00A5E4D1 /* QuakeLocation.swift */,
 				F68B98D82B301E1000A185A8 /* HTTPDataDownloader.swift */,
 				F68B98DA2B3355D800A185A8 /* QuakeClient.swift */,
 				F68B98E22B3BE1E600A185A8 /* QuakesProvider.swift */,
-				F68B98E42B3D311800A185A8 /* Quakes.swift */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -125,6 +128,28 @@
 				F678DF062B27F97A0013B7F4 /* EarthquakesTests.swift */,
 			);
 			path = EarthquakesTests;
+			sourceTree = "<group>";
+		};
+		F68B98E62B43755F00A185A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F65907F02B23B9CB0028243B /* QuakeError.swift */,
+				F66A0A1C2B2D076D00A5E4D1 /* QuakeLocation.swift */,
+				F66A0A1A2B2A652000A5E4D1 /* GeoJSON.swift */,
+				F65907EE2B22EF080028243B /* Quake.swift */,
+				F68B98EC2B43E58A00A185A8 /* Quake+Color.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F68B98E72B4375B700A185A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F68B98E42B3D311800A185A8 /* Quakes.swift */,
+				F68B98E82B4376A800A185A8 /* QuakeRow.swift */,
+				F68B98EA2B43777500A185A8 /* QuakeMagnitude.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +254,10 @@
 			files = (
 				F68B98E32B3BE1E600A185A8 /* QuakesProvider.swift in Sources */,
 				F68B98DF2B39099F00A185A8 /* TestData.swift in Sources */,
+				F68B98EB2B43777500A185A8 /* QuakeMagnitude.swift in Sources */,
 				F66A0A1B2B2A652000A5E4D1 /* GeoJSON.swift in Sources */,
+				F68B98ED2B43E58A00A185A8 /* Quake+Color.swift in Sources */,
+				F68B98E92B4376A800A185A8 /* QuakeRow.swift in Sources */,
 				F68B98D92B301E1000A185A8 /* HTTPDataDownloader.swift in Sources */,
 				F68B98DB2B3355D800A185A8 /* QuakeClient.swift in Sources */,
 				F68B98E52B3D311800A185A8 /* Quakes.swift in Sources */,
