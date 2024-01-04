@@ -99,8 +99,8 @@
 		F65907DF2B22D2030028243B /* Earthquakes */ = {
 			isa = PBXGroup;
 			children = (
-				F68B98E72B4375B700A185A8 /* Views */,
 				F65907E02B22D2030028243B /* EarthquakesApp.swift */,
+				F68B98E72B4375B700A185A8 /* Views */,
 				F68B98E62B43755F00A185A8 /* Models */,
 				F65907E22B22D2030028243B /* ContentView.swift */,
 				F65907E42B22D2050028243B /* Assets.xcassets */,
