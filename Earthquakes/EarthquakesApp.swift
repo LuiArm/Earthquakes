@@ -13,7 +13,7 @@ struct EarthquakesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Quakes()
                 .environmentObject(quakesProvider)//pass property to view environement
         }
     }

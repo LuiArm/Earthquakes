@@ -24,6 +24,6 @@ struct QuakeMagnitude: View {
 
 }
 
-#Preview {
-    QuakeMagnitude()
-}
+//#Preview {
+//    QuakeMagnitude()
+//}

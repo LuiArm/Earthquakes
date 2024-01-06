@@ -39,6 +39,6 @@ struct SelectButton: View {
     }
 }
 
-#Preview {
-    SelectButton()
-}
+//#Preview {
+//    SelectButton(mode: <#Binding<SelectMode>#>)
+//}
