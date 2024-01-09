@@ -7,7 +7,8 @@
 
 import Foundation
 
-
+//Marking the whole class with @MainActor makes methods of this class execute on the main thread.
+@MainActor
 class QuakesProvider: ObservableObject {
     //array of quakes will be published
     @Published var quakes: [Quake] = []
