@@ -8,6 +8,8 @@
 import Foundation
 
 class QuakeClient {
+    //Because the NSCache generic parameters are the same as the extension constraints, you can use the subscript to access the contents of the cache.
+    private let quakeCache: NSCache<NSString, CacheEntryObject> = NSCache()
     
     //computed, asynchronous, throwing property to fetch the earthquakes
     var quakes: [Quake] {
