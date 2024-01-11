@@ -44,6 +44,16 @@ actor QuakeClient {
     
     //
     func quakeLocation(from url: URL) async throws -> QuakeLocation {
+        //Waiting on an in-progress task here avoids making a second network request
+        if let cached = quakeCache[url] {
+            switch cached {
+            case .ready(let location):
+                return location
+            case .inProgress(let task):
+                return try await task.value
+            }
+        }
+        
         //Task to fetch locations, task allows to store the task and check its progress later
         let task = Task<QuakeLocation, Error> {
             let data = try await downloader.httpData(from: url)
@@ -52,10 +62,17 @@ actor QuakeClient {
         }
         //store task in the cache and await the result
         quakeCache[url] = .inProgress(task)
-        let location = try await task.value
-        //store final quake location in the cache and return location
-        quakeCache[url] = .ready(location)
-        return location
+        
+        do {
+            let location = try await task.value
+            //store final quake location in the cache and return location
+            quakeCache[url] = .ready(location)
+            return location
+        }catch {
+            quakeCache[url] = nil
+            throw error
+        }
+        
     }
     
 }
