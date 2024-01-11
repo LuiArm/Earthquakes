@@ -7,7 +7,8 @@
 
 import Foundation
 
-class QuakeClient {
+//actor designation protects the cache from simultaneous access from multiple threads
+actor QuakeClient {
     //Because the NSCache generic parameters are the same as the extension constraints, you can use the subscript to access the contents of the cache.
     private let quakeCache: NSCache<NSString, CacheEntryObject> = NSCache()
     
@@ -39,4 +40,22 @@ class QuakeClient {
     
     // url for feed
     private let feedURL = URL(string: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson")!
+    
+    
+    //
+    func quakeLocation(from url: URL) async throws -> QuakeLocation {
+        //Task to fetch locations, task allows to store the task and check its progress later
+        let task = Task<QuakeLocation, Error> {
+            let data = try await downloader.httpData(from: url)
+            let location = try decoder.decode(QuakeLocation.self, from: data)
+            return location
+        }
+        //store task in the cache and await the result
+        quakeCache[url] = .inProgress(task)
+        let location = try await task.value
+        //store final quake location in the cache and return location
+        quakeCache[url] = .ready(location)
+        return location
+    }
+    
 }
