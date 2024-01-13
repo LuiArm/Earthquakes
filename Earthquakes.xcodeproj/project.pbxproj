@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F656DE6A2B53165800B1772B /* QuakeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F656DE692B53165800B1772B /* QuakeDetail.swift */; };
 		F65907E12B22D2030028243B /* EarthquakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65907E02B22D2030028243B /* EarthquakesApp.swift */; };
 		F65907E52B22D2050028243B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65907E42B22D2050028243B /* Assets.xcassets */; };
 		F65907E82B22D2050028243B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65907E72B22D2050028243B /* Preview Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F656DE692B53165800B1772B /* QuakeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetail.swift; sourceTree = "<group>"; };
 		F65907DD2B22D2030028243B /* Earthquakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65907E02B22D2030028243B /* EarthquakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesApp.swift; sourceTree = "<group>"; };
 		F65907E42B22D2050028243B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				F68B98E42B3D311800A185A8 /* Quakes.swift */,
 				F68B98E82B4376A800A185A8 /* QuakeRow.swift */,
 				F68B98EA2B43777500A185A8 /* QuakeMagnitude.swift */,
+				F656DE692B53165800B1772B /* QuakeDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				F65907EF2B22EF080028243B /* Quake.swift in Sources */,
 				F6C0A3212B4752CE0010CF4B /* RefreshButton.swift in Sources */,
 				F65907E12B22D2030028243B /* EarthquakesApp.swift in Sources */,
+				F656DE6A2B53165800B1772B /* QuakeDetail.swift in Sources */,
 				F6593F102B4F312900208D76 /* NSCache+Subscript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

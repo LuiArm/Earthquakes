@@ -23,7 +23,9 @@ struct Quakes: View {
         NavigationView {
             List(selection: $selection) {
                 ForEach(provider.quakes) { quake in
-                    QuakeRow(quake: quake)
+                    NavigationLink(destination: QuakeDetail(quake: quake)){
+                        QuakeRow(quake: quake)
+                    }
                 }
                 .onDelete(perform: deleteQuakes)
             }
@@ -80,4 +82,5 @@ extension Quakes {
 
 #Preview {
     Quakes()
+        .environmentObject(QuakesProvider(client: QuakeClient(downloader: TestDownloader())))
 }
