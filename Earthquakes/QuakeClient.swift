@@ -50,7 +50,7 @@ actor QuakeClient {
         return aDecoder
     }()
     
-    //add downloader property
+    //add httpdownloader property
     let downloader: any HTTPDataDownloader
     
     //initializer to set the property value
@@ -62,7 +62,7 @@ actor QuakeClient {
     private let feedURL = URL(string: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson")!
     
     
-    //
+    // helper func to get quakes 
     func quakeLocation(from url: URL) async throws -> QuakeLocation {
         //Waiting on an in-progress task here avoids making a second network request
         if let cached = quakeCache[url] {
