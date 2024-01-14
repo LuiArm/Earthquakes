@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F656DE6A2B53165800B1772B /* QuakeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F656DE692B53165800B1772B /* QuakeDetail.swift */; };
+		F656DE6C2B54795800B1772B /* QuakeDetailMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F656DE6B2B54795800B1772B /* QuakeDetailMap.swift */; };
 		F65907E12B22D2030028243B /* EarthquakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65907E02B22D2030028243B /* EarthquakesApp.swift */; };
 		F65907E52B22D2050028243B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65907E42B22D2050028243B /* Assets.xcassets */; };
 		F65907E82B22D2050028243B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65907E72B22D2050028243B /* Preview Assets.xcassets */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		F656DE692B53165800B1772B /* QuakeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetail.swift; sourceTree = "<group>"; };
+		F656DE6B2B54795800B1772B /* QuakeDetailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetailMap.swift; sourceTree = "<group>"; };
 		F65907DD2B22D2030028243B /* Earthquakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65907E02B22D2030028243B /* EarthquakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesApp.swift; sourceTree = "<group>"; };
 		F65907E42B22D2050028243B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				F68B98E82B4376A800A185A8 /* QuakeRow.swift */,
 				F68B98EA2B43777500A185A8 /* QuakeMagnitude.swift */,
 				F656DE692B53165800B1772B /* QuakeDetail.swift */,
+				F656DE6B2B54795800B1772B /* QuakeDetailMap.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				F68B98DF2B39099F00A185A8 /* TestData.swift in Sources */,
 				F68B98EB2B43777500A185A8 /* QuakeMagnitude.swift in Sources */,
 				F66A0A1B2B2A652000A5E4D1 /* GeoJSON.swift in Sources */,
+				F656DE6C2B54795800B1772B /* QuakeDetailMap.swift in Sources */,
 				F68B98ED2B43E58A00A185A8 /* Quake+Color.swift in Sources */,
 				F6C0A31F2B47528F0010CF4B /* Quakes+Toolbar.swift in Sources */,
 				F6593F0E2B4E485C00208D76 /* CacheEntryObject.swift in Sources */,
