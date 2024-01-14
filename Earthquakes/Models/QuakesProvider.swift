@@ -27,6 +27,12 @@ class QuakesProvider: ObservableObject {
         quakes.remove(atOffsets: offSets)
     }
     
+    //func to get locations
+    func location(for quake: Quake) async throws -> QuakeLocation {
+        return try await client.quakeLocation(from: quake.detail)
+    }
+
+    
     //initiate a default QuakeClient instance, default QuakeClient uses URLSession
     init(client: QuakeClient = QuakeClient()) {
         self.client = client

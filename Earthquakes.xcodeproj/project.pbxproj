@@ -122,11 +122,6 @@
 				F68B98E62B43755F00A185A8 /* Models */,
 				F65907E42B22D2050028243B /* Assets.xcassets */,
 				F65907E62B22D2050028243B /* Preview Content */,
-				F68B98D82B301E1000A185A8 /* HTTPDataDownloader.swift */,
-				F68B98DA2B3355D800A185A8 /* QuakeClient.swift */,
-				F68B98E22B3BE1E600A185A8 /* QuakesProvider.swift */,
-				F6593F0D2B4E485C00208D76 /* CacheEntryObject.swift */,
-				F6593F0F2B4F312900208D76 /* NSCache+Subscript.swift */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -158,6 +153,11 @@
 				F65907F02B23B9CB0028243B /* QuakeError.swift */,
 				F66A0A1A2B2A652000A5E4D1 /* GeoJSON.swift */,
 				F66A0A1C2B2D076D00A5E4D1 /* QuakeLocation.swift */,
+				F68B98E22B3BE1E600A185A8 /* QuakesProvider.swift */,
+				F68B98D82B301E1000A185A8 /* HTTPDataDownloader.swift */,
+				F68B98DA2B3355D800A185A8 /* QuakeClient.swift */,
+				F6593F0D2B4E485C00208D76 /* CacheEntryObject.swift */,
+				F6593F0F2B4F312900208D76 /* NSCache+Subscript.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
