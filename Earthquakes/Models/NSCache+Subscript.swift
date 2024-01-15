@@ -25,7 +25,7 @@ extension NSCache where KeyType == NSString, ObjectType == CacheEntryObject{
             let key = url.absoluteString as NSString
             if let entry = newValue {
                 let value = CacheEntryObject(entry: entry)
-                setValue(value, forKey: key as String)
+                setObject(value, forKey: key)
             } else { // If the new value is nil, remove the object from the cache.
                 removeObject(forKey: key)
                 //This behavior of removing an object when nil is assigned mirrors the behavior of Dictionary
