@@ -23,9 +23,13 @@ struct QuakeDetailMap: View {
     }
     
     var body: some View {
-        Map(coordinateRegion: $region, annotationItems: [place]) { place in
-                   MapMarker(coordinate: place.location, tint: tintColor)
-               }
+//        Map(coordinateRegion: $region, annotationItems: [place]) { place in
+//                   MapMarker(coordinate: place.location, tint: tintColor)
+//               }
+        Map{
+            Marker("place", coordinate: place.location)
+                .tint(tintColor)
+        }
             .onAppear {
                 withAnimation {
                     region.center = place.location
